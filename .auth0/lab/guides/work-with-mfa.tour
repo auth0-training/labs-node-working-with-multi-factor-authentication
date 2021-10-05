@@ -1,0 +1,24 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "1: Work with Multifactor Authentication",
+  "steps": [
+    {
+      "file": "README.md",
+      "line": 1,
+      "title": "What you'll do"
+      "description": "staged"
+    },
+    {
+      "file": "README.md",
+      "line": 1,
+      "title": "Practice working with MFA",
+      "description": "staged"
+    },
+    {
+      "file": "README.md",
+      "line": 1,
+      "title": "Recap",
+      "description": "staged"
+    }
+  ]
+}
