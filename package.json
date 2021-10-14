@@ -1,19 +1,24 @@
 {
-  "name": "lab-node-template",
+  "name": "lab-node-labs-node-working-with-multi-factor-authentication",
   "version": "1.1.0",
-  "description": "An auth0 training lab template",
+  "description": "An auth0 training lab labs-node-working-with-multi-factor-authentication",
   "license": "MIT",
   "author": "Auth0",
   "bugs": {
-    "url": "https://github.com/auth0-training/labs-node-template/issues"
+    "url": "https://github.com/auth0-training/labs-node-labs-node-working-with-multi-factor-authentication/issues"
   },
-  "homepage": "https://github.com/auth0-training/labs-node-template#readme",
+  "homepage": "https://github.com/auth0-training/labs-node-labs-node-working-with-multi-factor-authentication#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/auth0-training/labs-node-template.git"
+    "url": "git+https://github.com/auth0-training/labs-node-labs-node-working-with-multi-factor-authentication.git"
   },
   "scripts": {
-
+    "init": "concurrently \"npm:init:dependencies\"",
+    "init:dependencies": "concurrently \"npm:api:dependencies\"  \"npm:web-app:dependencies\"",
+    "api:start": "npm start --prefix ./src/api",
+    "api:dependencies": "npm install --prefix ./src/api",
+    "web-app:start": "npm start --prefix ./src/web-app",
+    "web-app:dependencies": "npm install --prefix ./src/web-app"
   },
   "keywords": [
     "auth0",
