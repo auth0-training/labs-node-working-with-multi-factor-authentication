@@ -21,7 +21,7 @@ const {
 
 const app = express();
 
-app.use(checkUrl()); // Used to normalize URL in Vercel
+app.use(checkUrl()); // Used to normalize URL
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 app.use(logger('combined'));

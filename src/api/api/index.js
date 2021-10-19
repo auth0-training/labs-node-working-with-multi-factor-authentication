@@ -12,7 +12,7 @@ const { auth, requiredScopes } = require("express-oauth2-bearer");
 
 const app = express();
 
-// Used to normalize URL in Vercel
+// Used to normalize URL
 app.use(checkUrl());
 
 app.use(cors());
