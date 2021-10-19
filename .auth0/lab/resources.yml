@@ -1,3 +1,6 @@
+tenant:
+  flags:
+    universal_login: true
 clients: # Add other client settings https://auth0.com/docs/api/management/v2#!/Clients/post_clients
   -
     name: "Lab: Web App"
