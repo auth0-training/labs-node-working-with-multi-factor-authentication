@@ -8,9 +8,9 @@ clients: # Add other client settings https://auth0.com/docs/api/management/v2#!/
     jwt_configuration:
      alg: "RS256"
     callbacks:
-      - "http://localhost:7000/callback"
+      - "http://localhost:37500/callback"
     allowed_logout_urls:
-      - "http://localhost:7000"
+      - "http://localhost:37500"
 resourceServers: # Add other resource server settings (https://auth0.com/docs/api/management/v2#!/Resource_Servers/post_resource_servers)
   -
     name: "Lab: API"
