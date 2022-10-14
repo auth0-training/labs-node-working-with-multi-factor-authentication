@@ -6,7 +6,7 @@
       "file": "README.md",
       "line": 1,
       "title": "What you'll do",
-      "description": "**Here's what you'll do:**  \n\n1.  Enable Phone Message factor\n1.  Enable Push factor via Auth0 Guardian\n1.  Enable One-time Password factor with Authy app\n1.  Enable Email factor\n1.  Enforce MFA for all users in your tenant\n1.  Create a rule to trigger MFA for a specific user"
+      "description": "**Here's what you'll do:**  \n\n1.  Enable Phone Message factor\n1.  Enforce MFA for all users in your tenant\n1.  Enable Email factor\n1.  Reset MFA for a user\n1.  (Optional) Enable Push factor via Auth0 Guardian\n1.  (Optional) Enable One-time Password factor with Authy app"
     },
     {
       "file": "README.md",
