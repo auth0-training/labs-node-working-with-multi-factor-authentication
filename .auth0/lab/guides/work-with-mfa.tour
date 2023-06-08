@@ -22,7 +22,7 @@
       "file": "README.md",
       "line": 1,
       "title": "Enforce MFA for all users in your tenant",
-      "description": "## Enforce MFA for all users in your tenant\n\n1. #### Go to _Security > Multi-factor Auth_. Then, Scroll down the page to the _Define policies_ section.  \n      \n    ![locate the define policies settings](https://cdn.auth0.com/website/a0fun/v2/mfa-7.gif)    \n    \n1. #### In the _Require Multi-factor Auth_ section choose _Always,_ then click _Save_ and _Continue_ to confirm.  \n    \n    ![set require multi-factor auth to always](https://cdn.auth0.com/website/a0fun/v2/mfa-8.gif)    \n    \nNext, we'll test MFA.\n      ",
+      "description": "## Enforce MFA for all users in your tenant\n\n1. #### Go to _Security > Multi-factor Auth_. Then, Scroll down the page to the _Define policies_ section.  \n      \n    ![locate the define policies  settings](https://cdn.auth0.com/website/a0fun/v2/mfa-7.gif)    \n    \n1. #### In the _Require Multi-factor Auth_ section choose _Always,_ then scroll down and click _Save_. Click _Continue_ to confirm your decision.  \n    \n    ![set require multi-factor auth to always](https://cdn.auth0.com/website/a0fun/v2/mfa-8.gif)    \n    \nNext, we'll test MFA.\n      ",
       "selection": {
         "start": {
           "line": 1,
