@@ -3,13 +3,13 @@
   "title": "1: Work with Multifactor Authentication",
   "steps": [
     {
-      "file": "README.md",
+      "file": "",
       "line": 1,
       "title": "Overview",
       "description": "## Overview\n\nTrue MFA means that you authenticate with at least two factors of different types. A password is a knowledge factor. There are also possession and inherence factors. For this lab, we'll configure a possession factor using the Auth0 Guardian app.\n\n**Here's an overview of what you'll do:**  \n\n1.  Enable Push factor via Auth0 Guardian\n1.  Enforce MFA for all users in your tenant\n1.  Reset MFA for a user"
     },
     {
-      "file": "README.md",
+      "file": "",
       "line": 1,
       "title": "Enable the Push factor via Auth0 Guardian",
       "description": "## Enable Push factor via Auth0 Guardian\n\n_This optional exercise requires you to install the Auth0 Guardian app on a supported device. If you are unable to install apps on an iOS or Android device, you can skip this exercise._\n\nAuth0 Guardian is a mobile app that can deliver push notifications to a user’s pre-registered device - typically a mobile phone or tablet - from which a user can immediately allow or deny account access via the press of a button. It can also generate one-time passwords if that factor is preferred.  \n\n1. #### Enable Auth0 Guardian Push Notifications\nBefore you can use Auth0 Guardian push notifications, it must be enabled in the Auth0 dashboard. Let's do that now.\n    1. Log into your Auth0 dashboard at [manage.auth0.com](https://manage.auth0.com). (You may already be logged in.)\n    1. Make sure you're working in your *labs* tenant. If you've completed the lab on tenants, you'll have a few of these to choose from. Go ahead and choose the one that is not appended with dev or test. Just `\"labs-\"` + whatever you chose to name it. \n    \n        ![Select labs tenant](https://cdn.auth0.com/website/a0fun/v2/working-with-applications-0.gif)\n\n    1. Navigate to _Security > Multi-factor Auth_.  \n    1. Click on _Push Notifications using Auth0 Guardian_. \n    1. Click the toggle button on Auth0 Guardian page to enable this factor. \n    1. Click the _Back to Multi-factor Authentication_ link.\n    1. You should now see that _Push Notifications using Auth0 Guardian_ is _Enabled_\n\n\nNote that a warning banner appears. For training purposes, we can enable Push Notifications using Auth0 Guardian. However, to use this feature in production you will need an active Enterprise subscription. "
@@ -19,7 +19,7 @@
       "description": "## Try It Out - Uh Oh!\n\n1. #### Click [here](command:workbench.action.debug.start) to deploy the _Lab: Web App_.\n    \n    Give the app a few moments to deploy. (You can watch the debug terminal to see when it's finished.)\n    \n1. #### Ensure the ports are public so that the SPA app and API can communicate. Click the ports tab below, then right click each endpoint, and change the port visibility to public. \n    \n    ![](https://cdn.auth0.com/website/auth0/labs/ilt/public-ports.gif)\n\n\n\n3. #### Click [here](command:auth0.lab.openEndpointByName?[\"Lab: Web App\"]) to open the app in your browser and test logging in.\n    \n    You may need to log out fully before attempting to log in. \n    To do so, navigate to: https://{yourTenantName}.{yourRegion}.auth0.com/v2/logout\n    \n\n2. #### You’ll note that you’re not challenged for a second factor. Although you have enabled the _Push Notifications using Auth0 Guardian_ factor for the account, you have not yet set up your tenant to require its use.\n\n![try it out](https://cdn.auth0.com/website/a0fun/v2/mfa-6.gif)\n\nLet's fix this by enforcing MFA for all users."
     },
     {
-      "file": "README.md",
+      "file": "",
       "line": 1,
       "title": "Enforce MFA for all users in your tenant",
       "description": "## Enforce MFA for all users in your tenant\n\n1. #### Go to _Security > Multi-factor Auth_. Then, Scroll down the page to the _Define policies_ section.  \n      \n    ![locate the define policies  settings](https://cdn.auth0.com/website/a0fun/v2/mfa-7.gif)    \n    \n1. #### In the _Require Multi-factor Auth_ section choose _Always,_ then scroll down and click _Save_. Click _Continue_ to confirm your decision.  \n    \n    ![set require multi-factor auth to always](https://cdn.auth0.com/website/a0fun/v2/mfa-8.gif)    \n    \nNext, we'll test MFA.\n      ",
@@ -53,13 +53,13 @@
       "description": "## Test MFA\n   \n1. #### First, log out of the Expenses application. \n\n1. #### Now that MFA is configured for the Expenses app, and you have enrolled a user, test the login process using Guardian. Enter your user credentials. \n    The _Verify Your Identity_ dialog is displayed, with your device name and an _Awaiting confirmation_ message.    \n    On your device, you will receive a push notification message for the Guardian app stating _Authentication Request_. \n\n1. #### Tap the message. \n    The Guardian App will display the Authentication request details, including device, location, and date.      \n    At the bottom of the screen are two buttons: Deny and Allow. \n    \n1. #### Tap _Deny_. \n    A pop-up will offer you two options: _I’ve been hacked_ and _It was a mistake_. \n\n1. #### Tap _Cancel_.\n\n1. #### Now, tap _Allow._ \n    In your browser, your login will continue and you’ll arrive in the app."
     },
     {
-      "file": "README.md",
+      "file": "",
       "line": 1,
       "title": "Reset MFA for a user",
       "description": "## Reset MFA for a User\n\nIf a user has lost their mobile device, they can use their recovery code to log in. If they do not have a recovery code, they will need their tenant administrator to reset their multi-factor authentication (MFA).\n\nThis action is equivalent to removing or deleting the user's MFA registration. The MFA settings associated with the user will be removed, which allows them to set up MFA as if they were a new user on their next login attempt.   \n\n1. #### Reset MFA:\n    1. #### Go to the Details view of the MFA user in _Dashboard > User Management > Users_, then select the user.\n    1. #### Locate the Multi-Factor Authentication section, and select the _Reset MFA_ link. \n        The _Reset User MFA_ modal dialog is displayed, with the warning message “Are you really sure you want to reset MFA enrollment for this user? This cannot be undone!”   \n    1. #### Click _YES, RESET IT_. \n        You are returned to the user’s details tab. Note the Guardian MFA enrollment is no longer shown.\n\n    ![reset MFA](https://cdn.auth0.com/website/a0fun/v2/mfa-13.gif)  \n    \n1. #### Test the login in your _Lab: Web App_.  \n    After entering your credentials you will be forced to re-enroll in the Push Notifications with Auth0 Guardian factor.  \n"
     },
     {
-      "file": "README.md",
+      "file": "",
       "line": 1,
       "title": "Recap",
       "description": "## Recap\n\n**In this lab you:**\n\n*   Enabled the Enabled Push factor via Auth0 Guardian\n*   Enforced MFA for all users in your tenant\n"
