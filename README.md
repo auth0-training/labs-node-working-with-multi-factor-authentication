@@ -1,8 +1,8 @@
 [![Auth0 Training](https://cdn.auth0.com/website/training/labs/ilt/auth0training-okta.png "Auth0 Training by Okta")](https://training.auth0.com)
 
-# Lab Node Working with Connections
+# Lab Node Working with Multi-factor Authentication
 
-A connection is a relationship between Auth0 and a source of users. In this hands-on lab, learners will practice the necessary steps to enable a Social connection.
+In this hands-on lab, you’ll enable different authentication factor types in your tenant in order to enforce MFA. You will also create rules to trigger MFA for users.
 
 ## Requirements
 
