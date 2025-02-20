@@ -1,7 +1,7 @@
 
 # Lab: Secure Auth0 Applications with MFA
 
-In this [Okta Training](https://www.okta.com/training/) hands-on lab, you’ll enable different authentication factor types in your tenant in order to enforce MFA. You will also create rules to trigger MFA for users.
+In this [Okta Learning](https://learning.okta.com/) hands-on lab, you’ll enable different authentication factor types in your tenant in order to enforce MFA. You will also create rules to trigger MFA for users.
 
 --- 
 
